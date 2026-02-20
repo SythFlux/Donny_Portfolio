@@ -7,112 +7,133 @@ export const PROJECTS = [
   {
     name: 'About Me',
     tag: 'Personal',
-    techs: [''],
+    techs: ['C++', 'Python', 'JavaScript'],
     image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&q=80',
     description: `
-      <p>Hi, I'm <strong>Donny Vo</strong> — A Student Computer engineer passionate about
-      building beautiful, interactive digital experiences that blend art and engineering.</p>
-      <p>I specialise in full-stack web development, 3D graphics, and data visualization.
-      When I'm not coding, you'll find me experimenting with generative art, playing music,
-      or exploring new tech.</p>
+      <p>Hi, I'm <strong>Donny Vo</strong> — a Computer Engineering student at
+      Rotterdam University of Applied Sciences (2023–2027), based in Spijkenisse, Netherlands.</p>
+      <p>I build things across the full stack: from low-level embedded C++ on STM32
+      microcontrollers to real-time web dashboards and Android Automotive systems.
+      I'm driven by complex problems that sit at the intersection of hardware and software.</p>
       <p><strong>Let's connect:</strong></p>
       <ul>
-        <li>GitHub — github.com/donnyvo</li>
         <li>LinkedIn — linkedin.com/in/donnyvo</li>
-        <li>Email — hello@donnyvo.dev</li>
+        <li>Email — Donnyvo12@gmail.com</li>
+        <li>Phone — (+31) 648 916 001</li>
       </ul>`,
-    link: null,
+    link: 'https://www.linkedin.com/in/donnyvo/',
     isAbout: true,
   },
   {
-    name: 'Flex Platform',
-    tag: 'Web Application',
-    techs: ['React', 'Node.js', 'PostgreSQL'],
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80',
+    name: 'TNO Internship',
+    tag: 'Software Engineer Intern',
+    techs: ['C++', 'Android Automotive', 'CI/CD', 'TomTom'],
+    image: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&q=80',
     description: `
-      <p>A full-stack web platform built for modern teams to collaborate in real-time.
-      Features include live document editing, task boards, and integrated video calls.</p>
+      <p><strong>TNO — Android Automotive Integration in Dynamic Driving Simulator</strong><br/>
+      August 2025 – January 2026</p>
+      <p>Worked at TNO (Netherlands Organisation for Applied Scientific Research) integrating
+      TomTom's Android Automotive navigation stack into a dynamic driving simulator.</p>
       <ul>
-        <li>Real-time collaboration using WebSockets</li>
-        <li>Role-based access control &amp; SSO integration</li>
-        <li>Deployed on AWS with CI/CD pipeline</li>
+        <li>Developed a C++ low-level interface to extract real-time simulated vehicle state data</li>
+        <li>Integrated TomTom Android Automotive navigation stack with TNO driving simulator</li>
+        <li>Implemented real-time communication between simulator, navigation hardware and cluster</li>
+        <li>Integrated real-time traffic information for the driving simulator</li>
+        <li>Designed CI/CD pipelines for automation of driving simulator modules</li>
+        <li>Collaborated with TomTom engineers and TNO researchers in a research-oriented environment</li>
       </ul>`,
-    link: '#',
+    link: 'https://www.tno.nl',
   },
   {
-    name: 'Neural Canvas',
-    tag: 'Machine Learning',
-    techs: ['Python', 'PyTorch', 'WebGL'],
-    image: 'https://images.unsplash.com/photo-1547954575-855750c57bd3?w=600&q=80',
-    description: `
-      <p>An interactive AI art generator that transforms text prompts into stylized
-      digital paintings using a custom diffusion model trained on classical art.</p>
-      <ul>
-        <li>Fine-tuned Stable Diffusion for artistic styles</li>
-        <li>WebGL-based real-time preview pipeline</li>
-        <li>Gallery mode with community sharing</li>
-      </ul>`,
-    link: '#',
-  },
-  {
-    name: 'UrbanFlow',
-    tag: 'Data Visualization',
-    techs: ['D3.js', 'Mapbox', 'Python'],
+    name: 'Redox Flow Monitor',
+    tag: 'Full-Stack / Data Engineering',
+    techs: ['Python', 'FastAPI', 'PostgreSQL', 'InfluxDB', 'Docker'],
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80',
     description: `
-      <p>A city traffic analysis dashboard that visualizes real-time movement patterns
-      across urban areas. Used by city planners to optimize road networks.</p>
+      <p><strong>Secure Web-based Data Monitoring for Redox Flow Battery System</strong><br/>
+      Collaboration with Tempelman Chemical Technology — January 2024 – June 2025</p>
+      <p>Designed and built a full-stack monitoring platform for a redox flow battery system,
+      handling live sensor ingestion, storage, and real-time visualization.</p>
       <ul>
-        <li>Processes 2 M+ GPS data points per day</li>
-        <li>Heatmap overlays with time-series playback</li>
-        <li>Predictive congestion modeling</li>
+        <li>Developed data infrastructure with PostgreSQL and InfluxDB</li>
+        <li>Created a visual dashboard in HTML/CSS/JS to display live sensor values</li>
+        <li>Built a backend in Python using FastAPI with secure API endpoints</li>
+        <li>Deployed a Docker-based web application, reducing downtime by 30%</li>
+        <li>Processed 20 sensor readings/sec in Python/SQL feeding live data to the dashboard</li>
       </ul>`,
-    link: '#',
+    link: null,
   },
   {
-    name: 'SoundForge',
-    tag: 'Audio Engineering',
-    techs: ['Web Audio API', 'Rust', 'WASM'],
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&q=80',
+    name: 'IP-CAR',
+    tag: 'Embedded Systems',
+    techs: ['C++', 'STM32', 'Sensor Fusion', 'ROS'],
+    image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&q=80',
     description: `
-      <p>A browser-based digital audio workstation with multi-track recording,
-      real-time effects processing, and MIDI support — all running in WebAssembly.</p>
+      <p><strong>IP-CAR: Remote Museum Access Car</strong><br/>
+      Collaboration with Kenniscentrum Zorginnovatie &amp; VindiQu — August 2024 – January 2025</p>
+      <p>Built an autonomous navigation car enabling remote museum access, focusing on
+      embedded sensor fusion and reliable real-time obstacle detection.</p>
       <ul>
-        <li>Zero-latency audio processing via WASM</li>
-        <li>20+ built-in synthesizers and effects</li>
-        <li>MIDI controller mapping &amp; automation</li>
+        <li>Developed a real-time sensor fusion algorithm (C++/STM32) combining Ultrasonic and Time-of-Flight sensors for obstacle detection</li>
+        <li>Integrated 4 sensors with STM32, ensuring 360° awareness and smooth navigation</li>
+        <li>Led testing and tuning of autonomous behavior, optimizing embedded software for stability</li>
       </ul>`,
-    link: '#',
+    link: null,
   },
   {
-    name: 'CryptoLens',
-    tag: 'Fintech',
-    techs: ['TypeScript', 'Solidity', 'GraphQL'],
-    image: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=600&q=80',
+    name: 'Education',
+    tag: 'Rotterdam UAS · 2023–2027',
+    techs: ['Software Engineering', 'Embedded Software', 'Data Engineering'],
+    image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&q=80',
     description: `
-      <p>A DeFi analytics dashboard providing real-time portfolio tracking,
-      yield farming comparisons, and on-chain transaction analysis.</p>
+      <p><strong>Rotterdam University of Applied Sciences</strong><br/>
+      HBO Bachelor — Computer Engineering · 2023–2027 · Rotterdam, ZH</p>
+      <p>Pursuing a Bachelor's in Computer Engineering with a focus on the intersection
+      of hardware, embedded systems, and modern software development.</p>
+      <p><strong>Relevant Courses:</strong></p>
       <ul>
-        <li>Multi-chain support (Ethereum, Polygon, Solana)</li>
-        <li>Smart contract risk scoring algorithm</li>
-        <li>Real-time price alerts &amp; notifications</li>
+        <li>Software Engineering</li>
+        <li>Embedded Software</li>
+        <li>Data Engineering</li>
       </ul>`,
-    link: '#',
+    link: 'https://www.hogeschoolrotterdam.nl',
   },
   {
-    name: 'MediSync',
-    tag: 'Healthcare',
-    techs: ['Flutter', 'Firebase', 'HL7 FHIR'],
-    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=80',
+    name: 'Technical Skills',
+    tag: 'Skills',
+    techs: ['C++', 'Python', 'Docker', 'Linux', 'PostgreSQL'],
+    image: 'https://images.unsplash.com/photo-1536148935331-408321065b18?w=600&q=80',
     description: `
-      <p>A patient-doctor communication app with scheduling, secure messaging,
-      prescription management, and health record integration.</p>
+      <p><strong>Programming Languages</strong></p>
+      <ul><li>C, C++, Python, Java, Lua, PHP, Haskell, Rust</li></ul>
+      <p><strong>Software &amp; Tools</strong></p>
+      <ul><li>Git, GitHub, GitLab, Bash, Docker, Linux, ROS</li></ul>
+      <p><strong>Databases &amp; Data</strong></p>
+      <ul><li>SQL, PostgreSQL, InfluxDB, Data Management</li></ul>
+      <p><strong>Web Development</strong></p>
+      <ul><li>HTML, CSS, JavaScript, Node.js, Angular</li></ul>
+      <p><strong>Languages</strong></p>
+      <ul><li>Dutch (Native), English</li></ul>`,
+    link: null,
+  },
+  {
+    name: 'Soft Skills',
+    tag: 'How I Work',
+    techs: ['Agile', 'Scrum', 'Cross-disciplinary'],
+    image: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80',
+    description: `
+      <p>I thrive in collaborative, research-driven environments where both engineering
+      rigour and creative thinking are valued.</p>
       <ul>
-        <li>HIPAA-compliant end-to-end encryption</li>
-        <li>Integration with major EHR systems</li>
-        <li>AI-powered symptom pre-screening</li>
-      </ul>`,
-    link: '#',
+        <li>Agile / Scrum collaboration</li>
+        <li>Cross-disciplinary teamwork (research labs, industry partners)</li>
+        <li>Problem solving &amp; systems thinking</li>
+        <li>Technical documentation &amp; code reviews</li>
+        <li>Independent problem ownership</li>
+      </ul>
+      <p>At TNO I worked directly alongside TomTom engineers and scientific researchers —
+      communicating across disciplines to deliver a production integration on time.</p>`,
+    link: null,
   },
 ];
 

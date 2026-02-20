@@ -28,6 +28,8 @@ A visually rich, interactive portfolio website built with **Three.js** and vanil
 
 ---
 
+![Showcase](doc/Showcase.gif)
+
 ## Tech Stack
 
 | Layer | Technology |
