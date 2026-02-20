@@ -1,4 +1,4 @@
-# Flex — Interactive 3D Portfolio
+# Interactive 3D Portfolio
 
 A visually rich, interactive portfolio website built with **Three.js** and vanilla JavaScript. Projects are presented as 3D orbs in a dynamic scene with constellation lines, particle effects, parallax motion, and post-processing — all running in the browser with zero build tools.
 
