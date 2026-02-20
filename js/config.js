@@ -11,7 +11,7 @@ export const PROJECTS = [
     image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&q=80',
     description: `
       <p>Hi, I'm <strong>Donny Vo</strong> — a Computer Engineering student at
-      Rotterdam University of Applied Sciences (2023–2027), based in Spijkenisse, Netherlands.</p>
+      Rotterdam University of Applied Sciences (2023–2027), based in the Netherlands.</p>
       <p>I build things across the full stack: from low-level embedded systems to real-time web dashboards and Android Automotive systems.
       I'm driven by complex problems that sit at the intersection of hardware and software.</p>
       <p><strong>Let's connect:</strong></p>

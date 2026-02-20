@@ -8,7 +8,7 @@ A visually rich, interactive portfolio website built with **Three.js** and vanil
 ![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat&logo=threedotjs&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 
-<img width="1884" height="888" alt="Screenshot 2026-02-20 194153" src="https://github.com/user-attachments/assets/7e2658dd-9111-4ff3-ae2b-1e28a71d8306" />
+![Showcase](doc/Show-2.gif)
 
 ---
 
