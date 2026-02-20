@@ -15,13 +15,9 @@ A visually rich, interactive portfolio website built with **Three.js** and vanil
 ## Features
 
 - **3D Orb Navigation** — Each project is an interactive orb in a Three.js scene. Click to explore, drag to orbit, scroll to zoom.
-- **Constellation Lines** — Dynamic connecting lines drawn between project orbs.
 - **Particle System** — Ambient floating particles for atmospheric depth.
-- **Mechanical Construct** — Decorative background geometry that rotates and animates.
 - **Post-Processing** — Bloom and vignette effects via Three.js post-processing pipeline.
 - **Parallax Motion** — Mouse-driven parallax on the entire scene for a sense of depth.
-- **HUD Overlay** — Sci-fi heads-up display drawn on a dedicated canvas layer.
-- **Terminal Boot Sequence** — Animated hacker-style terminal intro on page load.
 - **Dark / Light Mode** — Smooth theme toggle with a slider switch.
 - **7 Accent Colors** — Switchable color themes (Default, Ocean Blue, NVIDIA Green, Purple, Cyan, Orange, Pink).
 - **Browser-Style Tabs** — Portfolio and Contact pages navigated via a tab bar with animated page transitions.
