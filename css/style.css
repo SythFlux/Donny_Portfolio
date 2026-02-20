@@ -930,6 +930,7 @@ html:not([data-theme]) .ct-footer span { color: rgba(0,0,0,0.2); }
   display: flex; gap: 8px; margin-bottom: 28px; flex-wrap: wrap;
 }
 .meta-chip {
+  display: inline-flex; align-items: center; gap: 6px;
   padding: 5px 14px; border-radius: 4px;
   background: rgba(0,0,0,0.04);
   border: 1px solid rgba(0,0,0,0.06);
@@ -938,6 +939,32 @@ html:not([data-theme]) .ct-footer span { color: rgba(0,0,0,0.2); }
   text-transform: uppercase;
   transition: all 0.3s ease;
 }
+.meta-chip i { font-size: 15px; flex-shrink: 0; }
+
+/* Skill icon badges (Technical Skills orb) */
+.skill-icon-badge {
+  display: inline-flex; align-items: center; gap: 7px;
+  padding: 7px 13px; border-radius: 8px;
+  background: rgba(0,0,0,0.04);
+  border: 1px solid rgba(0,0,0,0.07);
+  font-size: 11px; font-weight: 600; letter-spacing: 0.04em;
+  transition: all 0.2s ease; cursor: default;
+}
+.skill-icon-badge i { font-size: 20px; flex-shrink: 0; }
+.skill-icon-badge:hover {
+  border-color: var(--accent, #2266dd);
+  background: rgba(34,102,221,0.07);
+  transform: translateY(-2px);
+}
+[data-theme="dark"] .skill-icon-badge {
+  background: rgba(255,255,255,0.04);
+  border-color: rgba(255,255,255,0.08);
+}
+[data-theme="dark"] .skill-icon-badge:hover {
+  border-color: var(--accent, #66ddff);
+  background: rgba(102,221,255,0.07);
+}
+
 .meta-chip:hover {
   border-color: var(--accent, #2266dd);
   color: var(--accent, #2266dd);

@@ -11,6 +11,47 @@ import { playClose, playClick }         from './sound.js';
 import { showOrbCode, clearTerminal }   from './terminal.js';
 import { showHud, hideHud }             from './hud.js';
 
+// ── Tech icon map (Devicons class names) ─────────────────────────────
+const TECH_ICONS = {
+  // Languages
+  'C':                  'devicon-c-plain colored',
+  'C++':                'devicon-cplusplus-plain colored',
+  'Python':             'devicon-python-plain colored',
+  'JavaScript':         'devicon-javascript-plain colored',
+  'TypeScript':         'devicon-typescript-plain colored',
+  'Java':               'devicon-java-plain colored',
+  'Rust':               'devicon-rust-plain colored',
+  'PHP':                'devicon-php-plain colored',
+  'Lua':                'devicon-lua-plain colored',
+  'Haskell':            'devicon-haskell-plain colored',
+  // Web
+  'HTML':               'devicon-html5-plain colored',
+  'CSS':                'devicon-css3-plain colored',
+  'Node.js':            'devicon-nodejs-plain colored',
+  'Angular':            'devicon-angularjs-plain colored',
+  'FastAPI':            'devicon-fastapi-plain colored',
+  // Tools & DevOps
+  'Git':                'devicon-git-plain colored',
+  'GitHub':             'devicon-github-plain colored',
+  'GitLab':             'devicon-gitlab-plain colored',
+  'Docker':             'devicon-docker-plain colored',
+  'Linux':              'devicon-linux-plain colored',
+  'Bash':               'devicon-bash-plain colored',
+  'ROS':                'devicon-ros-plain colored',
+  'Android Automotive': 'devicon-android-plain colored',
+  'CI/CD':              'devicon-githubactions-plain colored',
+  // Databases
+  'PostgreSQL':         'devicon-postgresql-plain colored',
+  'SQL':                'devicon-azuresqldatabase-plain colored',
+  'InfluxDB':           'devicon-influxdb-plain colored',
+  // Courses / soft
+  'Software Engineering': 'devicon-vscode-plain colored',
+  'Embedded Software':    'devicon-embeddedc-plain colored',
+  'Data Engineering':     'devicon-mongodb-plain colored',
+  'Agile':                'devicon-jira-plain colored',
+  'Scrum':                'devicon-confluence-plain colored',
+};
+
 // ── DOM refs ─────────────────────────────────────────────────────────
 const panel    = document.getElementById('detail-panel');
 const dTag     = document.getElementById('d-tag');
@@ -74,7 +115,12 @@ export function openProject(idx) {
 
   dTag.textContent   = proj.tag;
   dTitle.textContent  = proj.name;
-  dMeta.innerHTML     = proj.techs.map(t => `<span class="meta-chip">${t}</span>`).join('');
+  dMeta.innerHTML     = proj.techs.map(t => {
+    const icon = TECH_ICONS[t];
+    const iconHtml = icon ? `<i class="${icon}" style="font-size:14px;"></i>` : '';
+    return `<span class="meta-chip">${iconHtml}${t}</span>`;
+  }).join('');
+
 
   // Update project counter  01 / 07
   const total = PROJECTS.length;
