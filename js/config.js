@@ -10,9 +10,9 @@ export const PROJECTS = [
     techs: [],
     image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&q=80',
     description: `
-      <p>Hi, I'm <strong>Donny Vo</strong> — a Computer Engineering student at
+      <p>Hi, I'm <strong>Donny Vo</strong> a Computer Engineering student at
       Rotterdam University of Applied Sciences (2023–2027), based in the Netherlands.</p>
-      <p>I build things across the full stack: from low-level embedded systems to real-time web dashboards and Android Automotive systems.
+      <p>I build across the full stack, spanning low-level embedded systems, real-time web applications, and cloud software.
       I'm driven by complex problems that sit at the intersection of hardware and software.</p>
       <p><strong>Let's connect:</strong></p>
       <div style="display:flex;gap:12px;margin-top:10px;flex-wrap:wrap;">
@@ -25,7 +25,7 @@ export const PROJECTS = [
           GitHub
         </a>
       </div>`,
-    link: 'https://www.linkedin.com/in/donnyvo/',
+   
     isAbout: true,
   },
   {
@@ -79,7 +79,7 @@ export const PROJECTS = [
       embedded sensor fusion and reliable real-time obstacle detection.</p>
       <ul>
         <li>Developed a real-time sensor fusion algorithm (C++/STM32) combining Ultrasonic and Time-of-Flight sensors for obstacle detection</li>
-        <li>Integrated 4 sensors with STM32, ensuring 360° awareness and smooth navigation</li>
+        <li>Integrated 4+ sensors with STM32, ensuring 360° awareness and smooth navigation</li>
         <li>Led testing and tuning of autonomous behavior, optimizing embedded software for stability</li>
       </ul>`,
     link: null,
@@ -88,7 +88,7 @@ export const PROJECTS = [
     name: 'Education',
     tag: 'Rotterdam UAS · 2023–2027',
     techs: ['Software Engineering', 'Embedded Software', 'Data Engineering'],
-    image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&q=80',
+    image: 'https://ganessolutions.com/wp-content/uploads/2024/05/university-705x321.jpg',
     description: `
       <p><strong>Rotterdam University of Applied Sciences</strong><br/>
       HBO Bachelor — Computer Engineering · 2023–2027 · Rotterdam, ZH</p>
@@ -142,6 +142,7 @@ export const PROJECTS = [
         <span class="skill-icon-badge"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></span>
         <span class="skill-icon-badge"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></span>
         <span class="skill-icon-badge"><i class="devicon-angularjs-plain colored"></i><span>Angular</span></span>
+        <span class="skill-icon-badge"><i class="devicon-threejs-original colored"></i><span>Three.js</span></span>
       </div>`,
     link: null,
   },
@@ -160,8 +161,7 @@ export const PROJECTS = [
         <li>Technical documentation &amp; code reviews</li>
         <li>Independent problem ownership</li>
       </ul>
-      <p>At TNO I worked directly alongside TomTom engineers and scientific researchers —
-      communicating across disciplines to deliver a production integration on time.</p>`,
+      <p></p>`,
     link: null,
   },
 ];

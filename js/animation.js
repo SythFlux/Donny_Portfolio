@@ -21,6 +21,17 @@ const _invQuat = new THREE.Quaternion();
 let _dofAperture = 0.0; // smoothed aperture value
 let _dofFocus    = 22.0; // smoothed focus distance
 
+// ── Idle camera sway ─────────────────────────────────────────────────
+let _swayWeight  = 0.0;
+const _swayAmp   = new THREE.Vector3(0.18, 0.10, 0.06);
+const _swayFreq  = new THREE.Vector3(0.11, 0.07, 0.05);
+const _swayPhase = new THREE.Vector3(
+  Math.random() * Math.PI * 2,
+  Math.random() * Math.PI * 2,
+  Math.random() * Math.PI * 2
+);
+const _swayPrev  = new THREE.Vector3(0, 0, 0); // last frame's applied offset
+
 /** Cubic ease-in-out */
 function easeIO(t) {
   return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
@@ -221,6 +232,20 @@ function tick() {
   }
 
   controls.update();
+
+  // ── Idle camera sway — infinite sine wobble, no drift ───────────────
+  const idleNow = isIntroDone() && !panelState.panelOpen && !panelState.camActive;
+  _swayWeight += ((idleNow ? 1.0 : 0.0) - _swayWeight) * (idleNow ? 0.008 : 0.04);
+
+  // Undo last frame's offset, then apply this frame's — camera never drifts
+  camera.position.sub(_swayPrev);
+  _swayPrev.set(
+    Math.sin(t * _swayFreq.x + _swayPhase.x) * _swayAmp.x * _swayWeight,
+    Math.sin(t * _swayFreq.y + _swayPhase.y) * _swayAmp.y * _swayWeight,
+    Math.sin(t * _swayFreq.z + _swayPhase.z) * _swayAmp.z * _swayWeight
+  );
+  camera.position.add(_swayPrev);
+
   // Use post-processing composer instead of direct render
   renderComposer();
 }

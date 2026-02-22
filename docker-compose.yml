@@ -6,3 +6,10 @@ services:
     ports:
       - "80:80"
     restart: unless-stopped
+  cloudflared:
+     image: cloudflare/cloudflared:latest
+     container_name: cloudflared
+     restart: unless-stopped
+     command: tunnel --no-autoupdate run --token ${CF_TUNNEL_TOKEN}
+     environment:
+       - CF_TUNNEL_TOKEN=${CF_TUNNEL_TOKEN}
